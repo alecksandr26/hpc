@@ -28,7 +28,7 @@ int main(void)
 		clock_t start_time = clock();
 		
 		(void) binary_search_expecting(A, n, A[rand_item_index]);
-
+		
 		clock_t end_time = clock();
 		double	duration = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
 		

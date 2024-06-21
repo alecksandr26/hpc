@@ -14,9 +14,10 @@ BIN_DIR = $(addprefix $(BUILD_DIR)/, bin)
 OBJ_DIR = $(addprefix $(BUILD_DIR)/, obj)
 SRC_DIR = src
 
-OBJS = $(addprefix $(OBJ_DIR)/, cost_branching.o)
+OBJS = $(addprefix $(OBJ_DIR)/, cost_branching.o cost_matmul.o)
 BINS = $(addprefix $(BIN_DIR)/, exp1.out exp2.out exp3.out exp4.out exp5.out exp6.out exp7.out exp8.out exp9.out\
-				test_branch_less_binary_search.out)
+				test_branch_less_binary_search.out aligned_alloc.out exp1_matmul.out\
+				exp2_matmul.out exp3_matmul.out exp4_matmul.out exp5_matmul.out)
 
 .PHONY: all
 all: $(BUILD_DIR) $(BIN_DIR) $(OBJ_DIR) $(OBJS) $(BINS)
